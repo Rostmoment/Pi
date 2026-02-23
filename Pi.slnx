@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Pi/Pi.vcxproj" Id="1991bc07-3295-4675-b750-d8f8208c2c6f" />
+</Solution>
