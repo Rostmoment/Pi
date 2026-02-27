@@ -16,7 +16,14 @@ int main()
 
 	BigNumber bigNumber(size);
 
-	bigNumber.SetBitsFromString("0001110001110100");
+	string first = "";
+	for (int i = 0; i < size * 8; ++i) {
+		first += '1';
+	}
+
+	bigNumber.SetBitsFromString(first);
+
+	cout << bigNumber.ToString();
 
 	return 0;
 }
