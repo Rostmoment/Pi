@@ -17,7 +17,15 @@ class BigNumber {
 			bytes = new uint8_t[size]{ 0 };
 		}
 
+		int GetSize() {
+			return this->size * BITS_IN_BYTE;
+		}
+
 		void SetBitsFromString(string bits) {
+			int size = GetSize();
+		    while (bits.length() < size)
+				bits = '0' + bits;
+
 			int index = 0;
 			for (char c : bits) {
 				int byte = index / BITS_IN_BYTE;

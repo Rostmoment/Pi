@@ -14,14 +14,9 @@ int main()
 		return 1;
 	}
 
-	BigNumber bigNumber(size);
+	BigNumber bigNumber(size); 
 
-	string first = "";
-	for (int i = 0; i < size * 8; ++i) {
-		first += '1';
-	}
-
-	bigNumber.SetBitsFromString(first);
+	bigNumber.SetBitsFromString("1");
 
 	cout << bigNumber.ToString();
 
